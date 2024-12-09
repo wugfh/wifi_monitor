@@ -1,0 +1,7 @@
+build/
+.vscode/ 
+sudo_gdb
+*.ll
+*.o
+*.csv
+*.pcap

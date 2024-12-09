@@ -1,0 +1,44 @@
+{
+    "name":"STA",
+    "mode":"throughput",
+    "source":"/dev/zero",
+    "destination":"",
+    "bernoulli_param":0.01,
+    "interface_probability":0.5,
+    "port": 7777,
+    "packs_number":10000,
+    "time_slot":9,
+    "local":[
+        {
+            "IP":"192.168.134.244",
+            "bitrate":"300M",
+            "frequency":5,
+            "mcs":9,
+            "nss":2,
+            "mcs_family":"VHT",
+            "monitor_name":"mon_48",
+            "monitor_mac":"30:f7:ad:1b:e7:f7",
+            "filter":"(type ctl and wlan addr1 90:de:80:19:da:91)"
+        },
+        {
+            "IP":"192.168.131.8",
+            "bitrate":"300M",
+            "frequency":5,
+            "mcs":9,
+            "nss":1,
+            "mcs_family":"VHT",
+            "monitor_name":"mon_165",
+            "monitor_mac":"0e:89:55:91:43:27",
+            "filter":"(type ctl and wlan addr1 90:de:80:c5:f0:cb)"
+        }
+    ],
+    "remote":[
+        {
+            "IP":"192.168.134.1"
+        },
+        {
+            "IP":"192.168.131.1"
+        }
+    ]
+    
+}

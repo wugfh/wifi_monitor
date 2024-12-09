@@ -1,0 +1,16 @@
+{
+    "name":"MON",
+    "local":[
+        {
+            "monitor_name":"mon_48",
+            "monitor_mac":"30:f7:ad:1b:e7:f7",
+            "filter":"(type ctl and wlan addr1 90:de:80:19:da:91 or wlan addr2 90:de:80:19:da:91) or (src 192.168.134.244 and udp)"
+        },
+        {
+            "monitor_name":"mon_165",
+            "monitor_mac":"0e:89:55:91:43:27",
+            "filter":"(type ctl and wlan addr1 90:de:80:c5:f0:cb or wlan addr2 90:de:80:c5:f0:cb) or (src 192.168.131.8 and udp)"
+        }
+    ]
+    
+}

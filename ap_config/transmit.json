@@ -1,0 +1,38 @@
+{
+    "name":"AP",
+    "mode":"throughput",
+    "source":"../README.md",
+    "destination":"./recv",
+    "port": 7777,
+    "packs_number":10000,
+    "local":[
+        {
+            "IP":"192.168.134.1",
+            "bitrate":"300M"
+        },
+        {
+            "IP":"192.168.131.1",
+            "bitrate":"300M"
+        }
+    ],
+    "remote":[
+        {
+            "IP":"192.168.134.244"
+        },
+        {
+            "IP":"192.168.131.8"
+        }
+    ],
+    "monitor":[
+        {
+            "name":"mon_40",
+            "channel":40,
+            "bpf_filter":"udp"
+        },
+        {
+            "name":"mon_165",
+            "channel":165,
+            "bpf_filter":"udp "
+        }
+    ]
+}
